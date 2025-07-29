@@ -1,0 +1,96 @@
+---
+title: "Neural Network Project"
+author: "Chakrika Vemireddy"
+date: "2025-05-06"
+output:
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Loading & Preparing the Data
+
+```{r}
+## Loading the required dataset
+recruitment.df<-read.csv("RecruitmentData_Preprocessed.csv",header=T)
+#View(recruitment.df)
+
+# Loading required packages
+library(neuralnet)
+library(caret)
+library(e1071)
+
+# Creating training and validation sets
+set.seed(123)
+train.rows.r <- sample(rownames(recruitment.df), dim(recruitment.df)[1]*0.6)
+train.data.r <- recruitment.df[train.rows.r, ]
+valid.rows.r <- setdiff(rownames(recruitment.df), train.rows.r)
+valid.data.r <- recruitment.df[valid.rows.r, ]
+
+# Showing column names for reference
+colnames(recruitment.df)
+
+```
+
+## Neural Network 1 – Single Hidden Layer
+
+```{r}
+# Training neural network with 3 hidden node
+set.seed(123)
+nn.r1<-neuralnet(Target~
+                  ExperienceS+ScoreS+OfferS+GenderM+PythonExpY+InternshipY+Edu_Grad+
+                  Loc_Urban,data=train.data.r,linear.output=F,
+                  hidden=3)
+
+# Ploting the neural net
+plot(nn.r1, rep = "best")
+```
+
+## Neural Network 2 – Two Hidden Layers
+
+```{r}
+# Training neural network with 2 hidden layers of 2 nodes each
+set.seed(123)
+nn.r2<-neuralnet(Target~
+                  ExperienceS+ScoreS+OfferS+GenderM+PythonExpY+InternshipY+Edu_Grad+
+                  Loc_Urban,data=train.data.r,linear.output=F,
+                  hidden=c(2,2))
+
+# Ploting the neural net
+plot(nn.r2, rep = "best")
+```
+
+## Evaluating Neural Network 1
+
+```{r}
+## Prediction on validation set 
+valid.pred.r1<-predict(nn.r1,valid.data.r[,c("ExperienceS", "ScoreS", "OfferS", "GenderM", 
+                                "PythonExpY", "InternshipY", "Edu_Grad", "Loc_Urban")])
+head(valid.pred.r1)
+
+# Converting predictions to binary class
+valid.class.r1=ifelse(valid.pred.r1 > 0.5, 1, 0)
+head(valid.class.r1)
+
+# Displaying performance
+confusionMatrix(as.factor(valid.class.r1), as.factor(valid.data.r$Target))
+```
+
+## Evaluating Neural Network 2
+
+```{r}
+# Prediction on validation set
+valid.pred.r2<-predict(nn.r2,valid.data.r[,c("ExperienceS", "ScoreS", "OfferS", "GenderM", 
+                                "PythonExpY", "InternshipY", "Edu_Grad", "Loc_Urban")])
+head(valid.pred.r2)
+
+# Converting predictions to binary class
+valid.class.r2=ifelse(valid.pred.r2 > 0.5, 1, 0)
+head(valid.class.r2)
+
+# Displaying performance
+confusionMatrix(as.factor(valid.class.r2), as.factor(valid.data.r$Target))
+```
