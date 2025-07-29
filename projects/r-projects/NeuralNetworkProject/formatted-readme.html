@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>README – Neural Network Project</title>
+  <link rel="stylesheet" href="../../../assets/css/style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #fdfdfd;
+      color: #333;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #1a73e8;
+    }
+    code {
+      background-color: #f4f4f4;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+    pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+      border-left: 4px solid #007acc;
+      overflow-x: auto;
+    }
+    ul, ol {
+      margin-left: 1.5em;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Neural Network Project</h1>
+  <p>This R project applies a neural network model to predict candidate selection outcomes based on preprocessed recruitment data.</p>
+
+  <h2>📁 Files Included</h2>
+  <ul>
+    <li><code>Neural Network Project.Rmd</code>: R Markdown file containing the full analysis and code.</li>
+    <li><code>Neural-Network-Project.html</code>: Rendered HTML report.</li>
+    <li><code>Neural-Network-Project.docx</code>: Word document version of the report.</li>
+    <li><code>RecruitmentData_Preprocessed.csv</code>: Cleaned dataset used for training and testing the model.</li>
+    <li><code>Neural Network Analysis Report.docx</code>: Summary report of findings and performance metrics.</li>
+    <li><code>README.md</code>: This documentation file.</li>
+  </ul>
+
+  <h2>⚙️ What It Does</h2>
+  <p>The goal of this project is to develop and evaluate a neural network model using R to predict whether a candidate will be selected, based on attributes such as experience, scores, and skills. The process involved:</p>
+  <ul>
+    <li>Trains two neural network models:
+      <ul>
+        <li>One with a single hidden layer</li>
+        <li>Another with two hidden layers (2x2)</li>
+      </ul>
+    </li>
+    <li>Predicts recruitment outcome (0 or 1)</li>
+    <li>Evaluates performance using confusion matrices</li>
+  </ul>
+
+  <h2>🧠 Tools & Packages Used</h2>
+  <ul>
+    <li><code>neuralnet</code></li>
+    <li><code>caret</code></li>
+    <li><code>e1071</code></li>
+  </ul>
+
+  <h2>▶️ How to Run</h2>
+  <ol>
+    <li>Make sure you have R and RStudio installed.</li>
+    <li>Install required packages (if not already installed):</li>
+  </ol>
+  <pre><code>install.packages("neuralnet")
+install.packages("caret")
+install.packages("e1071")</code></pre>
+  <ol start="3">
+    <li>Open <code>Neural Network Project.Rmd</code> in RStudio.</li>
+    <li>Load the dataset <code>RecruitmentData_Preprocessed.csv</code> (should be in the same folder).</li>
+    <li>Click Knit to render the report to HTML or Word, or run the chunks manually.</li>
+  </ol>
+
+</body>
+</html>
