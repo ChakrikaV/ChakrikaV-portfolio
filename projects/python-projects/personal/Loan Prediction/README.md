@@ -9,7 +9,7 @@ This project is part of my personal learning journey in machine learning and dat
 
 ## 📊 Project Overview
 
-The use case focuses on predicting loan approval outcomes based on applicant data such as income, credit history, employment status, and loan amount. This is a simplified binary classification task (`Approved` vs `Not Approved`).
+The use case focuses on predicting loan approval outcomes based on applicant data such as income, employment status, and loan amount. This is a simplified binary classification task.
 
 This project was designed to:
 - Practice applying core machine learning models.
