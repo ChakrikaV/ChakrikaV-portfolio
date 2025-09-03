@@ -5,6 +5,42 @@
   <title>Contact — Chakrika Vemireddy</title>
   <meta name="description" content="Get in touch with Chakrika Vemireddy via email, LinkedIn, GitHub, or view her resume.">
   <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    /* Contact page polish */
+    .contact-actions {
+      display: flex;
+      flex-direction: column;   /* Stack items vertically */
+      align-items: flex-start;  /* Change to center if you want them centered */
+      gap: 12px;                /* Space between each button */
+      margin-top: 12px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 12px;
+      border: 1px solid #ddd;
+      text-decoration: none;
+      font-weight: 600;
+      line-height: 1;
+      background: #f9f9f9;      /* Light background for button effect */
+      color: #000;
+      transition: all 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(0,0,0,.06);
+      background: #fff;
+    }
+
+    .visually-hidden {
+      position: absolute !important;
+      height: 1px; width: 1px;
+      overflow: hidden; clip: rect(1px, 1px, 1px, 1px);
+      white-space: nowrap; border: 0; padding: 0; margin: -1px;
+    }
+  </style>
 </head>
 <body>
   <nav>
@@ -22,7 +58,7 @@
       <a class="btn" href="mailto:Chakrika.Vemireddy08@gmail.com">Email Me</a>
       <a class="btn" href="https://www.linkedin.com/in/chakrika-vemireddy" target="_blank" rel="noopener">LinkedIn</a>
       <a class="btn" href="https://github.com/ChakrikaV" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn" href="resume/Chakrika_Vemireddy_Resume.pdf" target="_blank" rel="noopener">View Resume (PDF)</a>
+      <a class="btn" href="resume/Chakrika Vemireddy - Resume.pdf" target="_blank" rel="noopener">View Resume (PDF)</a>
     </div>
 
     <!-- Keeps email available to assistive tech/search without cluttering UI -->
