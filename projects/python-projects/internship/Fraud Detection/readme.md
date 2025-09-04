@@ -9,8 +9,8 @@ The project exposed me to handling **real-world imbalanced data**, **feature eng
 ## 📁 Files Included
 
 - `EDA.html`: Exploratory Data Analysis of the transaction dataset.  
-- `FraudDeterction.html`: Model development and evaluation notebook (exported to HTML).
-- `Fraud Detection Used Case.pptx`: Cleaned presentation deck summarizing the project.    
+- `FraudDeterction.html`: Model development and evaluation notebook (exported to HTML).  
+- `Fraud Detection Used Case.pptx`: Cleaned presentation deck summarizing the project.  
 - `README.md`: Raw project description.  
 - `README.html`: Formatted, portfolio-ready project description.  
 
@@ -21,18 +21,18 @@ The project exposed me to handling **real-world imbalanced data**, **feature eng
 The use case focused on predicting the likelihood of fraudulent activity from transaction data.  
 This project was designed to:  
 - Apply advanced machine learning models in a business context.  
-- Handle severe class imbalance and optimize for operationally relevant metrics.  
+- Handle severe class imbalance and optimize for key evaluation metrics.  
 - Deliver NDA-safe insights and summaries of model performance.  
 
 ---
 
 ## 🧪 Models Explored
 
-Several algorithms were evaluated to balance precision and recall:  
+Several algorithms were evaluated to balance accuracy and recall:  
 - **Logistic Regression**  
+- **Decision Tree**  
 - **Random Forest**  
 - **XGBoost**  
-- **Support Vector Machine (SVM)**  
 
 Each model was tuned and compared across multiple evaluation metrics.  
 
@@ -52,7 +52,6 @@ Each model was tuned and compared across multiple evaluation metrics.
 - `scikit-learn`  
 - `xgboost`  
 - `matplotlib` / `seaborn`  
-- `SQL` (for initial data handling)  
 
 ---
 
@@ -61,4 +60,4 @@ Each model was tuned and compared across multiple evaluation metrics.
 This project was part of my internship experience. All details here are **NDA-safe** and generalized. The work taught me how to:  
 - Engineer domain-specific features (e.g., velocity and frequency features).  
 - Handle class imbalance using stratified sampling and class weights.  
-- Align model outputs to real-world review capacity (e.g., tuning thresholds for Precision@K).  
+- Evaluate models using metrics such as Accuracy, Precision, Recall, F1-score, and ROC-AUC.  
