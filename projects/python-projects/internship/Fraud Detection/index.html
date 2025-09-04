@@ -19,9 +19,8 @@
     for financial transactions. The dataset was highly imbalanced, with fraudulent events representing
     only a small fraction of total transactions. I performed exploratory data analysis, feature engineering,
     and developed multiple models including Logistic Regression, Decision Trees, Random Forest,
-    and XGBoost. Evaluation centered on metrics such as Precision, Recall, F1-score, AUC, and Precision@K,
-    which better reflected the operational constraints of the analyst review process. The best-performing
-    models significantly improved recall while maintaining precision, helping reduce false positives
+    and XGBoost. Evaluation centered on metrics such as Accuracy, Precision, Recall, F1-score, and ROC-AUC.
+    The best-performing models significantly improved recall while maintaining precision, helping reduce false positives
     and allowing risk teams to prioritize reviews more effectively.
   </p>
 
@@ -45,8 +44,8 @@
   <h2>📘 Overview</h2>
   <p>
     The project involved handling highly imbalanced data, creating domain-specific features,
-    and comparing several machine learning models. Evaluation focused on metrics like PR-AUC
-    and Precision@K to align model outputs with the real-world review capacity of analysts.
+    and comparing several machine learning models. Evaluation focused on metrics like Accuracy,
+    Precision, Recall, F1-score, and ROC-AUC to assess model effectiveness.
   </p>
 
   <h2>🛠️ Skills & Tools Applied</h2>
@@ -54,7 +53,8 @@
     <li>Python: pandas, numpy, scikit-learn, xgboost</li>
     <li>Exploratory Data Analysis (EDA)</li>
     <li>Data visualization: matplotlib, seaborn</li>
-    <li>Handling class imbalance (stratified CV, class weights, threshold tuning)</li>
+    <li>Handling class imbalance (stratified CV, class weights)</li>
+    <li>Model evaluation: Accuracy, Precision, Recall, F1-score, ROC-AUC</li>
   </ul>
 </body>
 </html>
