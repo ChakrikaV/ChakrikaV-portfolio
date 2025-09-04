@@ -9,7 +9,8 @@ The project exposed me to handling **real-world imbalanced data**, **feature eng
 ## 📁 Files Included
 
 - `EDA.html`: Exploratory Data Analysis of the transaction dataset.  
-- `FraudDeterction.html`: Model development and evaluation notebook (exported to HTML).  
+- `FraudDeterction.html`: Model development and evaluation notebook (exported to HTML).
+- `Fraud Detection Used Case.pptx`: Cleaned presentation deck summarizing the project.    
 - `README.md`: Raw project description.  
 - `README.html`: Formatted, portfolio-ready project description.  
 
