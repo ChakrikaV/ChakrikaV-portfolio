@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Fraud Detection Project (Internship)</title>
+  <title>Fraud Detection Project (Internship) — README</title>
   <link rel="stylesheet" href="../../../../assets/css/style.css" />
 </head>
 <body>
   <main>
     <h1>Fraud Detection Project (Internship)</h1>
+
     <p>
       This project was completed during my internship as part of a fraud detection use case.
       The objective was to identify suspicious transactions more effectively while reducing false positives,
@@ -22,9 +23,9 @@
 
     <h2>📁 Files Included</h2>
     <ul>
-      <li><a href="EDA.html" target="_blank">EDA.html</a> — Exploratory Data Analysis of the transaction dataset.</li>
-      <li><a href="FraudDeterction.html" target="_blank">FraudDeterction.html</a> — Model development and evaluation report.</li>
-      <li><a href="Fraud Detection Used Case.pptx" target="_blank">Fraud Detection Used Case.pptx</a> — Cleaned presentation deck summarizing the project.</li>
+      <li><a href="EDA.html" target="_blank" rel="noopener">EDA.html</a> — Exploratory Data Analysis of the transaction dataset.</li>
+      <li><a href="FraudDeterction.html" target="_blank" rel="noopener">FraudDeterction.html</a> — Model development and evaluation notebook (exported to HTML).</li>
+      <li><a href="Fraud Detection Used Case.pptx" target="_blank" rel="noopener">Fraud Detection Used Case.pptx</a> — Cleaned presentation deck summarizing the project.</li>
       <li>README.md — Raw project description.</li>
       <li>README.html — Formatted, portfolio-ready project description.</li>
     </ul>
@@ -36,16 +37,17 @@
     </p>
     <ul>
       <li>Apply advanced machine learning models in a business context.</li>
-      <li>Handle severe class imbalance and optimize for operationally relevant metrics.</li>
+      <li>Handle severe class imbalance and optimize for key evaluation metrics.</li>
       <li>Deliver NDA-safe insights and summaries of model performance.</li>
     </ul>
 
     <h2>🧪 Models Explored</h2>
+    <p>Several algorithms were evaluated to balance accuracy and recall:</p>
     <ul>
       <li>Logistic Regression</li>
+      <li>Decision Tree</li>
       <li>Random Forest</li>
       <li>XGBoost</li>
-      <li>Support Vector Machine (SVM)</li>
     </ul>
     <p>Each model was tuned and compared across multiple evaluation metrics.</p>
 
@@ -62,7 +64,6 @@
       <li><code>scikit-learn</code></li>
       <li><code>xgboost</code></li>
       <li><code>matplotlib</code> / <code>seaborn</code></li>
-      <li><code>SQL</code> (for initial data handling)</li>
     </ul>
 
     <h2>🔖 Notes</h2>
@@ -73,7 +74,7 @@
     <ul>
       <li>Engineer domain-specific features (e.g., velocity and frequency features).</li>
       <li>Handle class imbalance using stratified sampling and class weights.</li>
-      <li>Align model outputs to real-world review capacity (e.g., tuning thresholds for Precision@K).</li>
+      <li>Evaluate models using metrics such as Accuracy, Precision, Recall, F1-score, and ROC-AUC.</li>
     </ul>
   </main>
 </body>
